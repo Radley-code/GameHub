@@ -19,7 +19,6 @@ ChillGames is a web-based platform for casual gaming, built with HTML, CSS, and 
 *   JavaScript
 
 
-```
 ## Getting Started
 
 1.  Clone the repository:
@@ -41,4 +40,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 [Mail](radleyacha00@icloud.com)
-```
+
