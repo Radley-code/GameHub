@@ -1,0 +1,224 @@
+@keyframes bgMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: linear-gradient(120deg, #0f0c29, #302b63, #24243e, #00f2ff);
+  background-size: 300% 300%;
+  animation: bgMove 8s ease-in-out infinite;
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 700px;
+  min-width: 320px;
+  max-width: 98vw;
+  padding: 0;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px #00f2ff;
+  animation: fadeIn 1s ease;
+  display: flex;
+  overflow: hidden;
+}
+
+.tabs button {
+  width: 50%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tabs .active {
+  border-bottom: 2px solid #00f2ff;
+}
+
+.form {
+  flex-direction: column;
+  gap: 10px;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  display: flex;
+}
+.container.signup-active #signupForm {
+  display: flex;
+}
+
+.glow-btn {
+  background: #00f2ff;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00f2ff;
+  transition: transform 0, 2s ease;
+}
+
+.glow-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00f2ff;
+}
+
+.left-panel {
+  width: 50%;
+  min-width: 200px;
+  background: linear-gradient(135deg, #0f0c29 60%, #00f2ff 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px 4px 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.form-wrapper {
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  padding: 20px;
+  justify-content: flex-start;
+  display: none;
+}
+.form.active {
+  display: flex;
+}
+
+/* No sliding, only show active form */
+
+@media (max-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0;
+  }
+  .container.login-active,
+  .container.signup-active {
+    flex-direction: column;
+  }
+  .left-panel {
+    width: 100%;
+    min-width: 0;
+    font-size: 2rem;
+    padding: 8px 10px 4px 10px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .form-wrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: none;
+    transform: none !important;
+    display: flex;
+  }
+  .form {
+    width: 90vw;
+    max-width: 400px;
+    padding: 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tabs {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 100vh;
+    min-height: 100vh;
+  }
+  .container.login-active,
+  .container.signup-active {
+    flex-direction: column;
+  }
+  .left-panel {
+    font-size: 1.1rem;
+    padding: 4px 2px 2px 2px;
+    border-radius: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .form {
+    padding: 8px;
+    font-size: 0.95rem;
+    width: 95vw;
+    max-width: 350px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tabs button {
+    font-size: 0.95rem;
+    padding: 6px;
+  }
+  .glow-btn {
+    padding: 7px;
+    font-size: 0.95rem;
+  }
+  .tabs {
+    margin-bottom: 8px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

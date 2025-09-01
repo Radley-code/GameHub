@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Google Fonts: Orbitron for gaming style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ChillGames</title>
+  </head>
+  <body>
+    <div class="container login-active">
+      <div class="left-panel" id="sideText">Welcome<br />Back!</div>
+      <div style="width: 50%">
+        <div class="tabs" style="display: flex; gap: 0">
+          <button id="loginTab" class="active">Login</button>
+          <button id="signupTab">Signup</button>
+        </div>
+        <div class="form-wrapper">
+          <form id="loginForm" class="form">
+            <input type="text" placeholder="Username" required />
+            <input type="password" placeholder="Password" />
+            <button class="glow-btn">Enter GameHub</button>
+          </form>
+          <form id="signupForm" class="form" style="display: none">
+            <input type="text" placeholder="Username" required />
+            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Confirm Password" />
+            <button class="glow-btn">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
