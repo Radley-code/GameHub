@@ -39,5 +39,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-[Mail](radleyacha00@icloud.com)
+[Mail](mailto:radleyacha00@icloud.com)
 
