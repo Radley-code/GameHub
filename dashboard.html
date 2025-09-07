@@ -4,16 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game DashBoard</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
   </head>
   <body>
     <div class="dashboard">
-      <header>
-        <h2>Welcome, <span id="usernameDisplay"></span>👋🏻</h2>
-        <button id="logoutbtn" onclick="logout()">LogOut</button>
-      </header>
-    </div>
+      <h2>Welcome, <span id="usernameDisplay"></span>👋🏻</h2>
+      <div class="profile-card">
+        <img src="" alt="Avatar" id="avatar" class="avatar" />
+        <p><span id="avatarname"></span></p>
 
+        <div class="stats">
+          <p>Points: <span id="points"></span></p>
+        </div>
+        <button type="button" class="Update-btn" onclick="updateNickname()">
+          Update Profile
+        </button>
+      </div>
+
+      <h3>Game Library</h3>
+      <div class="game-grid">
+        <div class="game-card">
+          <img src="./Game/rps-icon.webp" alt="RPS Icon" />
+          <h4>Rock Paper Scissors</h4>
+          <button class="play-btn" onclick="playRPS()">Play</button>
+        </div>
+
+        <div class="game-card">
+          <img src="./Game/rps-icon.webp" alt="RPS Icon" />
+          <h4>Rock Paper Scissors</h4>
+          <button class="play-btn" onclick="playRPS()">Play</button>
+        </div>
+
+        <div class="game-card">
+          <img src="./Game/rps-icon.webp" alt="RPS Icon" />
+          <h4>Rock Paper Scissors</h4>
+          <button class="play-btn" onclick="playRPS()">Play</button>
+        </div>
+      </div>
+    </div>
+    <button id="logout" onclick="logout()">LogOut</button>
     <script src="./js/dashboard.js"></script>
+    <script src="./js/updateprofile.js"></script>
   </body>
 </html>
