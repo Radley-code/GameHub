@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/updateprofile.css" />
+    <title>Update Profile</title>
+  </head>
+  <body>
+    <div class="avatar-picker">
+      <label>Choose Your Avatar</label>
+      <div class="avatar-grid">
+        <img
+          src="./avatars/avatar1.png"
+          alt=""
+          onclick="selectAvatar('avatar1.png')"
+        />
+        <img
+          src="./avatars/avatar2.png"
+          alt=""
+          onclick="selectAvatar('avatar2.png')"
+        />
+        <img
+          src="./avatars/avatar3.png"
+          alt=""
+          onclick="selectAvatar('avatar3.png')"
+        />
+      </div>
+    </div>
+    <div class="data-updater">
+      <label for="nicknameInput">Nickname:</label>
+      <input type="text" id="nicknameInput" placeholder="Enter new nickname" />
+      <button onclick="saveProfile()">Save Profile</button>
+    </div>
+    <script src="./js/updateprofile.js"></script>
+  </body>
+</html>

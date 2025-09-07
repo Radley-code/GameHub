@@ -1,0 +1,36 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #1e1e2f;
+    color: white;
+    padding: 20px;
+}
+
+.avatar-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.avatar-grid img {
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.avatar-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #00f2ff;
+}
+
+.data-updater{
+    margin: 15px;
+}
+.data-updater button{
+    margin-top: 30px;
+    background-color: rgb(88, 97, 56);
+    color: aliceblue;
+    border-radius: 20%;
+    padding: 10px;
+}
