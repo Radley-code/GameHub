@@ -33,4 +33,16 @@ function updateNickname() {
   window.location.href = "updateprofile.html";
 }
 
+function playRPS() {
+  window.location.href = "RPS-game.html";
+}
+
 //Point system display
+const pointSpan = document.getElementById("points");
+
+if (pointSpan) {
+  const wins = userData.score?.rps?.wins || 0;
+  const losses = userData.score?.rps?.losses || 0;
+
+  pointSpan.textContent = `Wins: ${wins} | Losses: ${losses}`;
+}
