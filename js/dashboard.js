@@ -37,6 +37,10 @@ function playRPS() {
   window.location.href = "RPS-game.html";
 }
 
+function playDice() {
+  window.location.href = "DiceDuel.html";
+}
+
 //Point system display
 const pointSpan = document.getElementById("points");
 
