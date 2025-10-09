@@ -41,9 +41,25 @@
           <button class="play-btn" onclick="playRPS()">Play</button>
         </div>
       </div>
-    </div>
+    </div> <div class="logout-btn">
     <button id="logout" onclick="logout()">LogOut</button>
+    
+   </div>
+
+   <div id="devModal" class="modal">
+    <div class="modal-content-wrapper">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>About the Developer</h2>
+      <p><strong>Acha Radley</strong> is a Software Engineer with strong skills in JavaScript and frameworks(React), HTML and CSS. Passionate about building new projects and translating 
+      business requirement into techinal solutions to help launch new projects</p>
+      <p>Portfolio: <a href="">Click Here</a></p>
+      <p>GitHub: <a href="">Click Here</a></p>
+      </div>
+    </div>
+   </div>
     <script src="./js/dashboard.js"></script>
     <script src="./js/updateprofile.js"></script>
+   <footer>&copy; GameHub <button class="dev-button" onclick="openModal()">Meet the Dev</button></footer> 
   </body>
 </html>

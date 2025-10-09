@@ -46,3 +46,13 @@ if (pointSpan) {
 
   pointSpan.textContent = `Wins: ${wins} | Losses: ${losses}`;
 }
+
+//Modal Pop-up
+function openModal() {
+  const modal = document.getElementById("devModal");
+  modal.classList.add("show");
+}
+function closeModal() {
+  const modal = document.getElementById("devModal");
+  modal.classList.remove("show");
+}
