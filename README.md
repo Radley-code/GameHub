@@ -2,7 +2,7 @@
 
 ## Overview
 
-ChillGames is a web-based platform for casual gaming, built with HTML, CSS, and JavaScript. It allows users to create profiles, play games (starting with Rock Paper Scissors), and potentially connect with friends in the future. User data is stored locally in the browser using local storage, eliminating the need for a server-side backend.
+GameHub is a web-based platform for casual gaming, built with HTML, CSS, and JavaScript. It allows users to create profiles, play games (starting with Rock Paper Scissors), and potentially connect with friends in the future. User data is stored locally in the browser using local storage, eliminating the need for a server-side backend.
 
 ## Features
 
