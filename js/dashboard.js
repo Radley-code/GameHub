@@ -60,3 +60,16 @@ function closeModal() {
   const modal = document.getElementById("devModal");
   modal.classList.remove("show");
 }
+
+// Open/close game rules modals
+function openGameModal(id) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  modal.classList.add("show");
+}
+
+function closeGameModal(id) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  modal.classList.remove("show");
+}

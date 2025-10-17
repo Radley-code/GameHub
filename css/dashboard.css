@@ -104,7 +104,6 @@ body {
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-  
 }
 .dev-button:hover {
   background-color: #29293d;
@@ -115,10 +114,10 @@ body {
   position: fixed;
   z-index: 1000;
   left: 0;
-   top: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -148,7 +147,46 @@ body {
 
 .modal-content p {
   color: #000;
-  
+}
+
+/* center modal-inner for game rules */
+.modal .modal-content {
+  max-width: 600px;
+  color: #000;
+}
+
+.modal-content ul {
+  text-align: left;
+  margin: 10px 0 0 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .close {
@@ -163,7 +201,7 @@ body {
   color: #000;
 }
 
-footer{
+footer {
   display: flex;
   align-items: center;
 }
@@ -221,7 +259,7 @@ footer{
     padding: 15px;
   }
 
-  .logout-btn{
+  .logout-btn {
     border: none;
     display: flex;
     align-items: center;
@@ -229,12 +267,12 @@ footer{
   }
 
   #logout {
-  margin-top: 30px;
-  background: #ff4d4d;
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 10%;  
-  border-radius: 5px;
-}
+    margin-top: 30px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 10%;
+    border-radius: 5px;
+  }
 }
