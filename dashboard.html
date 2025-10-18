@@ -66,7 +66,7 @@
             <li>Scissors beats Paper.</li>
             <li>Paper beats Rock.</li>
             <li>Choose one option and the opponent's choice is random.</li>
-            <li>Win awards a point;  counts as a loss.</li>
+            <li>Win awards a point; counts as a loss.</li>
           </ul>
         </div>
       </div>
@@ -110,8 +110,59 @@
     <script src="./js/dashboard.js"></script>
     <script src="./js/updateprofile.js"></script>
     <footer>
-      &copy; GameHub
+      <div class="info">
+
       <button class="dev-button" onclick="openModal()">Meet the Dev</button>
+     
+      &copy; GameHub
+
+      <button
+        class="dev-button"
+        onclick="openContribute()"
+        style="margin-left: 12px"
+      >
+        Contribute
+      </button>
+
+      <!-- Contribute Modal -->
+      <div
+        id="contributeModal"
+        class="modal"
+        aria-hidden="true"
+        role="dialog"
+        aria-labelledby="contributeTitle"
+      >
+        <div class="modal-content">
+          <button
+            class="close"
+            onclick="closeContribute()"
+            aria-label="Close contribute modal"
+          >
+            &times;
+          </button>
+          <h2 id="contributeTitle">Contribute</h2>
+          <p>
+            If you'd like to contribute to this project, please visit the
+            repository on GitHub and open a pull request with a short
+            description of your changes.
+          </p>
+          <p>Suggested areas to contribute:</p>
+          <ul>
+            <li>Improve accessibility and keyboard support</li>
+            <li>Add more games or UI polish</li>
+            <li>Write tests and CI configuration</li>
+          </ul>
+          <p>
+            To get started: fork the repo, create a branch, make your changes,
+            then open a Pull Request. Include screenshots and a short
+            description.
+          </p>
+          <p>
+            Repo: <a href="#" aria-label="Repository (placeholder)">GitHub</a>
+          </p>
+        </div>
+      </div>
+      </div>
     </footer>
   </body>
 </html>

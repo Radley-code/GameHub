@@ -73,3 +73,20 @@ function closeGameModal(id) {
   if (!modal) return;
   modal.classList.remove("show");
 }
+
+function dev_section() {
+  const modal = document.getElementById("dev-modal");
+  modal.classList.add("show");
+}
+
+function openContribute() {
+  const modal = document.getElementById("contributeModal");
+  if (!modal) return;
+  modal.classList.add("show");
+}
+
+function closeContribute() {
+  const modal = document.getElementById("contributeModal");
+  if (!modal) return;
+  modal.classList.remove("show");
+}
