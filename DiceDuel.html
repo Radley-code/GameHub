@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/game.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="./css/game.css" />
     <title>Dice Duel</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="profile">
-            <img id="avatar" src="" class="avatar" />
-            <span id="nickname"></span>
-            <p id="score">Wins: 0 | Losses: 0</p>
-        </div>
+      <img id="avatar" src="" class="avatar" />
+      <span id="nickname"></span>
+      <p id="score">Wins: 0 | Losses: 0</p>
+    </div>
     <h1>🎲 Dice Duel</h1>
     <div>
-        <div class="dice" id="playerDice">🎲</div>
-        <div class="dice" id="aiDice">🎲</div>
+      <div class="dice" id="playerDice">🎲</div>
+      <div class="dice" id="aiDice">🎲</div>
     </div>
-   <div class="result" id="resultText"></div>
-    <button class="btn" onclick="rollDice()">Roll Dice</button><br><br>
-     <button onclick="goBack()">Back to DashBoard</button>
- 
+    <div class="result" id="resultText"></div>
+    <button class="btn" onclick="rollDice()">Roll Dice</button><br /><br />
+    <button onclick="goBack()">Back to DashBoard</button>
+
+    <script src="./js/nozoom.js"></script>
     <script src="./js/DiceDuel.js"></script>
-</body>
+  </body>
 </html>
