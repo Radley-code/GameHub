@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link rel="stylesheet" href="./css/updateprofile.css" />
     <title>Update Profile</title>
   </head>
@@ -14,16 +17,19 @@
           src="./avatars/avatar1.png"
           alt=""
           onclick="selectAvatar('avatar1.png')"
+          loading="lazy"
         />
         <img
           src="./avatars/avatar2.png"
           alt=""
           onclick="selectAvatar('avatar2.png')"
+          loading="lazy"
         />
         <img
           src="./avatars/avatar3.png"
           alt=""
           onclick="selectAvatar('avatar3.png')"
+          loading="lazy"
         />
       </div>
     </div>
@@ -32,6 +38,7 @@
       <input type="text" id="nicknameInput" placeholder="Enter new nickname" />
       <button onclick="saveProfile()">Save Profile</button>
     </div>
+    <script src="./js/nozoom.js"></script>
     <script src="./js/updateprofile.js"></script>
   </body>
 </html>

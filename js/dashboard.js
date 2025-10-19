@@ -29,8 +29,69 @@ function logout() {
   window.location.href = "index.html";
 }
 
+//Redirects user to different game pages
 function updateNickname() {
   window.location.href = "updateprofile.html";
 }
 
+function playRPS() {
+  window.location.href = "RPS-game.html";
+}
+
+function playDice() {
+  window.location.href = "DiceDuel.html";
+}
+
+function clickRace() {
+  window.location.href = "clickRace.html"
+} 
+
 //Point system display
+const pointSpan = document.getElementById("points");
+
+if (pointSpan) {
+  const wins = userData.score?.rps?.wins || 0;
+  const losses = userData.score?.rps?.losses || 0;
+
+  pointSpan.textContent = `Wins: ${wins} | Losses: ${losses}`;
+}
+
+//Modal Pop-up
+function openModal() {
+  const modal = document.getElementById("devModal");
+  modal.classList.add("show");
+}
+function closeModal() {
+  const modal = document.getElementById("devModal");
+  modal.classList.remove("show");
+}
+
+// Open/close game rules modals
+function openGameModal(id) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  modal.classList.add("show");
+}
+
+function closeGameModal(id) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  modal.classList.remove("show");
+}
+
+function dev_section() {
+  const modal = document.getElementById("dev-modal");
+  modal.classList.add("show");
+}
+
+function openContribute() {
+  const modal = document.getElementById("contributeModal");
+  if (!modal) return;
+  modal.classList.add("show");
+}
+
+function closeContribute() {
+  const modal = document.getElementById("contributeModal");
+  if (!modal) return;
+  modal.classList.remove("show");
+}

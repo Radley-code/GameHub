@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/game.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <h1>⚡Click Race</h1>
+
+    <div class="profile">
+      <img id="avatar" src="" class="avatar" loading="lazy"/>
+      <span id="nickname"></span>
+      <p id="score">Wins: 0 | Losses: 0</p>
+    </div>
+    <div class="click-race">
+        <p>Click as fast as you can in 5 seconds</p>
+        <button class="btn" onclick="startRace()">Start Race</button>
+        <div class="btn" id="clickBtn" disabled>Click Me!</div>
+        <div class="timer" id="timerText">Time: 5</div>
+        <div class="timer" id="scoreText">Score: 0</div>
+    </div>
+
+    <div class="result">
+      <p id="resultText">Make you move!</p>
+      <button type="button" onclick="resetGame()">Play Again</button>
+    </div>
+    <br />
+    <button onclick="goBack()">Back to DashBoard</button>
+
+    <script src="./js/clickRace.js"></script>
+  </body>
+</html>

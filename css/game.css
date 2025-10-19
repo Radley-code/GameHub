@@ -1,0 +1,43 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.rps-container {
+    max-width: 400px;
+    margin: auto;
+}
+
+.avatar {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.choices button{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    background: #2a2a3d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #444;
+}
+
+#clickBtn{
+   margin: 40px;
+   padding: 30px;
+    background-color: #444;
+    border-radius: 30%;
+}
