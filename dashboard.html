@@ -10,7 +10,7 @@
     <div class="dashboard">
       <h2>Welcome, <span id="usernameDisplay"></span>👋🏻</h2>
       <div class="profile-card">
-        <img src="" alt="Avatar" id="avatar" class="avatar" />
+        <img src="" alt="Avatar" id="avatar" class="avatar" loading="lazy" />
         <p><span id="avatarname"></span></p>
 
         <div class="stats">
@@ -28,6 +28,7 @@
             src="./Game/rps-icon.webp"
             onclick="openGameModal('rpsModal')"
             alt="RPS Icon"
+            loading="lazy"
           />
           <h4>Rock Paper Scissors</h4>
           <button class="play-btn" onclick="playRPS()">Play</button>
@@ -38,6 +39,7 @@
             src="./Game/diceduel.webp"
             onclick="openGameModal('diceModal')"
             alt="Dice Duel Icon"
+            loading="lazy"
           />
           <h4>Dice Duel</h4>
           <button class="play-btn" onclick="playDice()">Play</button>
@@ -48,6 +50,7 @@
             src="./Game/rps-icon.webp"
             onclick="openGameModal('click-race-Modal')"
             alt="RPS Icon"
+            loading="lazy"
           />
           <h4>Click Race</h4>
           <button class="play-btn" onclick="clickRace()">Play</button>
