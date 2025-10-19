@@ -29,6 +29,7 @@ function logout() {
   window.location.href = "index.html";
 }
 
+//Redirects user to different game pages
 function updateNickname() {
   window.location.href = "updateprofile.html";
 }
@@ -40,6 +41,10 @@ function playRPS() {
 function playDice() {
   window.location.href = "DiceDuel.html";
 }
+
+function clickRace() {
+  window.location.href = "clickRace.html"
+} 
 
 //Point system display
 const pointSpan = document.getElementById("points");

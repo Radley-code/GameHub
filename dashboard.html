@@ -46,11 +46,11 @@
         <div class="game-card">
           <img
             src="./Game/rps-icon.webp"
-            onclick="openGameModal('rpsModal')"
+            onclick="openGameModal('click-race-Modal')"
             alt="RPS Icon"
           />
-          <h4>Rock Paper Scissors</h4>
-          <button class="play-btn" onclick="playRPS()">Play</button>
+          <h4>Click Race</h4>
+          <button class="play-btn" onclick="clickRace()">Play</button>
         </div>
       </div>
 
@@ -81,6 +81,21 @@
           <ul>
             <li>Both players roll a six-sided die.</li>
             <li>Higher roll wins the round.</li>
+            <li>Wins and losses update your profile points.</li>
+            <li>Ties result in no change.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+       <div id="click-race-Modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeGameModal('click-race-Modal')"
+            >&times;</span
+          >
+          <h2>Click Race</h2>
+          <ul>
+            <li>Both players  a six-sided die.</li>
+            <li>Higher roll  round.</li>
             <li>Wins and losses update your profile points.</li>
             <li>Ties result in no change.</li>
           </ul>

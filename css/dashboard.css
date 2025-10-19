@@ -3,6 +3,12 @@ body {
   background: #1e1e2f;
   color: white;
   padding: 20px;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+html {
+  touch-action: manipulation;
 }
 
 .dashboard h2 {
@@ -208,7 +214,6 @@ footer {
 
 .info {
   display: flex;
-  gap: 70px;
 
 }
 

@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/game.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/game.css" />
     <title>Game</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="rps-container">
-        <h2>Rock Paper Scissors</h2>
+      <h2>Rock Paper Scissors</h2>
 
-        <div class="profile">
-            <img id="avatar" src="" class="avatar" />
-            <span id="nickname"></span>
-            <p id="score">Wins: 0 | Losses: 0</p>
-        </div>
+      <div class="profile">
+        <img id="avatar" src="" class="avatar" />
+        <span id="nickname"></span>
+        <p id="score">Wins: 0 | Losses: 0</p>
+      </div>
 
-        <div class="choices">
-            <button onclick="play('rock')">✊🏻Rock</button>
-            <button onclick="play('paper')">📃 Paper</button>
-            <button onclick="play('scissors')">✂️ Scissors</button>
-        </div>
+      <div class="choices">
+        <button onclick="play('rock')">✊🏻Rock</button>
+        <button onclick="play('paper')">📃 Paper</button>
+        <button onclick="play('scissors')">✂️ Scissors</button>
+      </div>
 
-        <div class="result">
-            <p id="resultText">Make you move!</p>
-            <button type="button" onclick="resetGame()">Play Again</button>
-        </div>
+      <div class="result">
+        <p id="resultText">Make you move!</p>
+        <button type="button" onclick="resetGame()">Play Again</button>
+      </div>
 
-        <button onclick="goBack()">Back to DashBoard</button>
+      <button onclick="goBack()">Back to DashBoard</button>
     </div>
-<script src="./js/RPS.js"></script>    
-</body>
+    <script src="./js/RPS.js"></script>
+  </body>
 </html>
