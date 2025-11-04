@@ -31,6 +31,8 @@ function startRace() {
       document.getElementById("clickBtn").disabled = true;
       document.getElementById("timerText").textContent = "⏱️ Time's up";
       // showFinalScore();
+      alert("Time's up! Your final score is: " + score);
+      resetGame();
     }
   }, 1000);
 }
@@ -39,23 +41,35 @@ function clickMe() {
   if (!isActive) return;
   score++;
   document.getElementById("scoreText").textContent = "Score: " + score;
- userData.score.rps.wins += 1;
-  // if (score = 5) {
-  //   result = "Superb";
-  // } else if(score = 10) {
-  //   result = "Fantastic"; 
-  
-  // } else {
-  //    userData.score.rps.wins += 15;
-  //   result = "Perfect";
-  // } 
 
-  
 
-  document.getElementById("resultText").textContent = result;
-  updateScore(); //Defined below
+  if (score < 5) {
+    result = "Keep Trying!";
+    userData.score.rps.wins += 1;
+    
+  } else if (score < 10) {
+    result = "Good Job!";
+    userData.score.rps.wins += 5;
+    document.body.style.backgroundColor = "black";
+  } else if (score < 15) {
+    result = "Great Work!";
+    userData.score.rps.wins += 10;
+    document.body.style.backgroundColor = "gold";
+  } else {
+    result = "Amazing!";
+    userData.score.rps.wins += 15;
+    document.body.style.backgroundColor = " #1e1e2f";
+  } 
+
+
+
+ document.getElementById("resultText").textContent = result;
+   updateScore(); //Defined below
   localStorage.setItem(username, JSON.stringify(userData));
-}
+  
+}  
+
+ 
 
 document.getElementById("clickBtn").addEventListener("pointerdown", clickMe);
 
@@ -68,3 +82,13 @@ function updateScore() {
 function goBack() {
   window.location.href = "dashboard.html";
 }
+
+resetGame = () => {
+  score = 0;
+  timeLeft = 5; 
+  isActive = false;
+  document.getElementById("scoreText").textContent = "Score: 0";
+  document.getElementById("timerText").textContent = "Time: 0";
+  document.getElementById("resultText").textContent = "";
+  document.getElementById("clickBtn").disabled = true;
+} 
