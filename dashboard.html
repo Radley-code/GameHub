@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Game DashBoard</title>
     <link rel="stylesheet" href="./css/dashboard.css" />
   </head>
@@ -22,6 +25,7 @@
       </div>
 
       <h3>Game Library</h3>
+      <p>Click on the game image to how to play it.</p>
       <div class="game-grid">
         <div class="game-card">
           <img
@@ -47,7 +51,7 @@
 
         <div class="game-card">
           <img
-            src="./Game/rps-icon.webp"
+            src="./Game/ClickGameIcon.webp"
             onclick="openGameModal('click-race-Modal')"
             alt="RPS Icon"
             loading="lazy"
@@ -89,18 +93,20 @@
           </ul>
         </div>
       </div>
-    </div>
-       <div id="click-race-Modal" class="modal">
+
+      <div id="click-race-Modal" class="modal">
         <div class="modal-content">
           <span class="close" onclick="closeGameModal('click-race-Modal')"
             >&times;</span
           >
           <h2>Click Race</h2>
           <ul>
-            <li>Both players  a six-sided die.</li>
-            <li>Higher roll  round.</li>
-            <li>Wins and losses update your profile points.</li>
-            <li>Ties result in no change.</li>
+            <li>Click as fast as you can within 5 seconds.</li>
+            <li>Your score is based on the number of clicks.</li>
+            <li>Less than 1 clicks you get 0 points</li>
+            <li>10 clicks you get 5 points</li>
+            <li>15 clicks you get 10 points</li>
+            <li>more than 15 clicks you get 15 points</li>
           </ul>
         </div>
       </div>
@@ -120,68 +126,73 @@
             about building new projects and translating business requirement
             into techinal solutions to help launch new projects
           </p>
-          <p>Portfolio: <a href="">Click Here</a></p>
-          <p>GitHub: <a href="">Click Here</a></p>
+          <p>Portfolio: <a href="https://radleyacha.netlify.app/">Click Here</a></p>
+          <p>GitHub: <a href="https://github.com/Radley-code">Click Here</a></p>
         </div>
       </div>
     </div>
-  <script src="./js/nozoom.js"></script>
-  <script src="./js/dashboard.js"></script>
-  <script src="./js/updateprofile.js"></script>
+
     <footer>
       <div class="info">
+        <button class="dev-button" onclick="openModal()">Meet the Dev</button>
 
-      <button class="dev-button" onclick="openModal()">Meet the Dev</button>
-     
-      &copy; GameHub
+        &copy; GameHub
 
-      <button
-        class="dev-button"
-        onclick="openContribute()"
-        style="margin-left: 12px"
-      >
-        Contribute
-      </button>
+        <button
+          class="dev-button"
+          onclick="openContribute()"
+          style="margin-left: 12px"
+        >
+          Contribute
+        </button>
 
-      <!-- Contribute Modal -->
-      <div
-        id="contributeModal"
-        class="modal"
-        aria-hidden="true"
-        role="dialog"
-        aria-labelledby="contributeTitle"
-      >
-        <div class="modal-content">
-          <button
-            class="close"
-            onclick="closeContribute()"
-            aria-label="Close contribute modal"
-          >
-            &times;
-          </button>
-          <h2 id="contributeTitle">Contribute</h2>
-          <p>
-            If you'd like to contribute to this project, please visit the
-            repository on GitHub and open a pull request with a short
-            description of your changes.
-          </p>
-          <p>Suggested areas to contribute:</p>
-          <ul>
-            <li>Improve accessibility and keyboard support</li>
-            <li>Add more games or UI polish</li>
-            <li>Write tests and CI configuration</li>
-          </ul>
-          <p>
-            To get started: fork the repo, create a branch, make your changes,
-            then open a Pull Request. Include screenshots and a short
-            description.
-          </p>
-          <p>
-            Repo: <a href="#" aria-label="Repository (placeholder)">GitHub</a>
-          </p>
+        <!-- Contribute Modal -->
+        <div
+          id="contributeModal"
+          class="modal"
+          aria-hidden="true"
+          role="dialog"
+          aria-labelledby="contributeTitle"
+        >
+          <div class="modal-content">
+            <button
+              class="close"
+              onclick="closeContribute()"
+              aria-label="Close contribute modal"
+            >
+              &times;
+            </button>
+            <h2 id="contributeTitle">Contribute</h2>
+            <p>
+              If you'd like to contribute to this project, please visit the
+              repository on GitHub and open a pull request with a short
+              description of your changes.
+            </p>
+            <p>Suggested areas to contribute:</p>
+            <ul>
+              <li>Improve accessibility and keyboard support</li>
+              <li>Add more games or UI polish</li>
+              <li>Write tests and CI configuration</li>
+            </ul>
+            <p>
+              To get started: fork the repo, create a branch, make your changes,
+              then open a Pull Request. Include screenshots and a short
+              description.
+            </p>
+            <p>
+              Repo:
+              <a
+                href="https://github.com/Radley-code/GameHub.git"
+                aria-label="Repository (placeholder)"
+                >GitHub</a
+              >
+            </p>
+          </div>
         </div>
       </div>
-      </div>
     </footer>
+    <script src="./js/nozoom.js"></script>
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/updateprofile.js"></script>
   </body>
 </html>
